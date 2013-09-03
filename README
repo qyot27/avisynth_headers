@@ -1,0 +1,18 @@
+AviSynth, as an MSVC-based project, does not have a 'make install'
+routine that users familiar with GNU-style build systems recognize.
+Thus, users must search out the avisynth_c.h header from AviSynth's
+source code and manually copy it to wherever their source code
+expects it to be.
+
+As a remedy for this issue when wanting to build libav with
+--enable-avisynth, this repo provides a copy of these headers
+to facilitate ease of install.
+
+To install:
+make install
+
+To install to a non-standard location:
+make install PREFIX=/path/to/location
+
+To uninstall:
+make uninstall
